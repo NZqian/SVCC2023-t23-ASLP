@@ -45,7 +45,7 @@
 
     <br><br>
     <h2 id="abstract">1. Abstract<a name="abstract"></a></h2>
-    <p>This paper introduces the singing voice conversion(SVC) model developed for the Singing Voice Conversion Challenge 2023. Based on the end-to-end framework VITS, our SVC model incorporates four key modules: a prior encoder, a posterior encoder, a decoder, and a PBTC module. We use shallow bottleneck features from a pre-trained multilingual ASR model Whisper as input for rich linguistic content, with information perturbation to prevent timbre leakage. Also, the PBTC module is used to extract multi-scale F0, thereby capturing better pitch variations. Furthermore, to better adapt to the target speaker with few amount of data, we design a three-stage training strategy to drive the model optimization. Experimental results of SVCC2023 show the superior performance of our model in naturalness while getting a middle-level similarity. Further ablations are also conducted to validate the effectiveness of our design.</p>
+    <p>This paper presents the T23 team's system for the Singing Voice Conversion Challenge 2023. Our singing conversion model is built on VITS, integrating a prior encoder, a posterior encoder, a decoder, and a parallel bank of transposed convolutions (PBTC) module. Leveraging Whisper ASR model, we extract bottleneck features (BNF) as input for the prior encoder. We use pitch perturbation to remove speaker timbre before BNF extraction, preventing leakage of source speaker timbre. The PBTC module extracts multi-scale F0, enhancing pitch variations in singing. A three-stage training strategy adapts the base model to the target speaker with limited data. Official challenge results show our system ranks 1st and 2nd in Task 1 and 2, exhibiting superior naturalness. Ablation study confirms the effectiveness of our system design.</p>
 
     <table frame=void rules=none>
       <tr>
@@ -74,9 +74,6 @@
       </tbody>
     </table>
     </br>
-    <cite>[1] X. Tian, Z. Wang, S. Yang, X. Zhou, H. Du, Y. Zhou, M. Zhang, K. Zhou, B. Sisman, L. Xie et al., “The nus & nwpu system for voice conversion challenge 2020,” in Proc. Joint Workshop for the Blizzard Challenge and Voice Conversion Challenge 2020, 2020, pp. 170–17</cite>
-    </br>
-    <cite>[2] Y. Chen, M. Tu, T. Li, X. Li, Q. Kong, J. Li, Z. Wang, Q. Tian, Y. Wang, and Y. Wang, “Streaming voice conversion via intermediate bottleneck features and non-streaming teacher guidance,” CoRR, vol. abs/2210.15158, 202</cite>
   </section>
 </body>
 
