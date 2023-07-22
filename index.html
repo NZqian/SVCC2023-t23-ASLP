@@ -58,6 +58,9 @@
 
 
     <h2>2. Demos -- Singing Voice Conversion<a name="Comparison"></a></h2>
+    <p>
+      The challenge organizers provide two singers (IDF1 and IDM1) in any-to-one, in-domain singing voice conversion (task 1); two speakers (CDF1, CDM1) in any-to-one, cross-domain singing voice conversion (task2).In task 2, only speech data is provided.
+    </p>
     <ul>
       <!-- <li>Bottomline: Replace all convolution layers in the backbone model [1] with the causal version to create a naïve streaming implementation.</li>
       <li>IBF-VC: Reinplement [2] using the backbone model.</li>
@@ -74,6 +77,17 @@
       </tbody>
     </table>
     </br>
+    <cite>
+      <a href="https://arxiv.org/abs/2306.14422">Wen-Chin Huang, Lester Phillip Violeta, Songxiang Liu, Jiatong Shi, Yusuke Yasuda, and Tomoki Toda, “The singing voice conversion challenge 2023,” CoRR, vol. abs/2306.14422, 2023.</a>
+    </cite>
+    <br>
+    <cite>
+      <a href="https://arxiv.org/abs/2303.12197">Tejas Jayashankar, Jilong Wu, Leda Sari, David Kant, Vimal Manohar, and Qing He, “Self-supervised representations for singing voice conversion,” in Proc. ICASSP. IEEE, 2023, pp. 1–5.</a>
+    </cite>
+    <br>
+    <cite>
+      <a href="https://ieeexplore.ieee.org/document/6853678">Matthias Mauch and Simon Dixon, “PYIN: A fundamental frequency estimator using probabilistic threshold distributions,” in Proc. ICASSP. 2014, pp. 659–663, IEEE.</a>
+    </cite>
   </section>
 </body>
 
@@ -98,8 +112,8 @@
     }
     sample_data += `</tr><tr>`
     for (const id in models) {
-      sample_data += '<td style="text-align: center; width: 150px;" rowspan=1 colspan=1>Reference</td>'
-      sample_data += '<td style="text-align: center; width: 150px;" rowspan=1 colspan=1>Converted Singing</td>'
+      sample_data += '<td style="text-align: center; width: 150px;" rowspan=1 colspan=1>reference</td>'
+      sample_data += '<td style="text-align: center; width: 150px;" rowspan=1 colspan=1>converted singing</td>'
     }
     
     
